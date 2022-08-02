@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.calculator {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.display-row {
+  height: 7rem;
+  background-color: #f77f00;
+  border: 2px solid #2f3e46;
+  margin-top: 3rem;
+  width: 80%;
+}
+.button-row {
+  background-color: #16a085;
+  width: 80%;
+}
+.button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.btn {
+  width: 90%;
+  margin: 1rem 0;
+  background-color: #ff7675;
+  color: #00b894;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #34495e;
+}
+.special-btn {
+  background-color: #2f3e46;
+  color: white;
+}
+.display-row .display .display_row_1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.display_row_1 p {
+  font-size: 20px;
+  color: #1565c0;
+}
+
+/*=================================================================*/
+/*----------------------Media query start--------------------------*/
+/*=================================================================*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+  ##Ipad Air width 820px, Ipad mini 768px width
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .display-row {
+    height: 12rem;
+    width: 100%;
+  }
+  .button-row {
+    width: 100%;
+  }
+  .btn {
+    height: 100px;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .display-row {
+    height: 12rem;
+    width: 100%;
+  }
+  .button-row {
+    width: 100%;
+  }
+  .btn {
+    height: 100px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  ## oneplus6T width 412px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .display-row {
+    height: 12rem;
+    width: 100%;
+  }
+  .button-row {
+    width: 100%;
+  }
+  .btn {
+    height: 100px;
+  }
+}
+
+/*=================================================================*/
+/*----------------------Media query End----------------------------*/
+/*=================================================================*/
