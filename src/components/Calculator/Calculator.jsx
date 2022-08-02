@@ -132,7 +132,7 @@ function Calculator() {
                                 </div> 
                             </div>
                             <div className='row'>
-                                <div className='display-row-2'>
+                                <div className='display_row_2'>
                                     <h1>{digiteCharacter}</h1>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ function Calculator() {
                     </div>
                     <div className='col-sm-3'>
                         <div className='button'>
-                            <Button className='btn' onClick={()=>handleOperation("+")}>+</Button>
+                            <Button className='btn ssmd-btn' onClick={()=>handleOperation("+")}>+</Button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ function Calculator() {
                     </div>
                     <div className='col-sm-3'>
                         <div className='button'>
-                            <Button className='btn' onClick={()=>handleOperation("-")}>-</Button>
+                            <Button className='btn ssmd-btn' onClick={()=>handleOperation("-")}>-</Button>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ function Calculator() {
                     </div>
                     <div className='col-sm-3'>
                         <div className='button'>
-                            <Button className='btn' onClick={()=>handleOperation("*")}>x</Button>
+                            <Button className='btn ssmd-btn' onClick={()=>handleOperation("*")}>x</Button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@ function Calculator() {
                     </div>
                     <div className='col-sm-3'>
                         <div className='button'>
-                            <Button className='btn' onClick={()=>handleOperation("/")}>/</Button>
+                            <Button className='btn ssmd-btn' onClick={()=>handleOperation("/")}>/</Button>
                         </div>
                     </div>
                 </div>

@@ -31,9 +31,14 @@
   color: #00b894;
   font-weight: bold;
   box-shadow: 2px 2px 2px #34495e;
+  padding: 10px 0;
 }
 .special-btn {
   background-color: #2f3e46;
+  color: white;
+}
+.ssmd-btn {
+  background-color: #454545;
   color: white;
 }
 .display-row .display .display_row_1 {
@@ -66,7 +71,15 @@
   }
   .btn {
     height: 100px;
-    font-size: 35px;
+    font-size: 70px;
+    line-height: 0px;
+  }
+  .display_row_1 p {
+    font-size: 50px;
+  }
+  .display_row_2 h1 {
+    font-size: 100px;
+    line-height: 35px;
   }
 }
 
@@ -84,7 +97,15 @@
   }
   .btn {
     height: 100px;
-    font-size: 35px;
+    font-size: 70px;
+    line-height: 0px;
+  }
+  .display_row_1 p {
+    font-size: 50px;
+  }
+  .display_row_2 h1 {
+    font-size: 100px;
+    line-height: 35px;
   }
 }
 
@@ -103,10 +124,17 @@
   }
   .btn {
     height: 100px;
-    font-size: 35px;
+    font-size: 70px;
+    line-height: 0px;
+  }
+  .display_row_1 p {
+    font-size: 50px;
+  }
+  .display_row_2 h1 {
+    font-size: 100px;
+    line-height: 35px;
   }
 }
-
 /*=================================================================*/
 /*----------------------Media query End----------------------------*/
 /*=================================================================*/
