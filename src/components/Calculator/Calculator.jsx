@@ -14,9 +14,8 @@ function Calculator() {
         if(operation==='='){
             setResultNumeric(0)
         } 
-        
         if(digiteCharacter==='0'){
-            setDigiteCharacter(x)
+            setDigiteCharacter(x)//only for when press 0 for the first time
         }
         else if(digiteCharacter!=='0'){
             setDigiteCharacter((value)=>value+x)
