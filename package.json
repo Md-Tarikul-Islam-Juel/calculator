@@ -1,5 +1,6 @@
 {
-  "name": "reactapp",
+  "name": "calculator",
+  "homepage": "https://Md-Tarikul-Islam-Juel.github.io/calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
