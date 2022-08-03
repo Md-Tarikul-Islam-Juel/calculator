@@ -9,6 +9,8 @@ function Calculator() {
     let [secondDigiteCharacter,setSecondDigiteCharacter]=useState('0');
     let [resultNumeric,setResultNumeric]=useState(0)
     let [operation,setOperation]=useState('');
+    let [dot,setDot]=useState(0);
+    
 
     function handleDigite(x){
         if(operation==='='){
@@ -17,14 +19,22 @@ function Calculator() {
         if(digiteCharacter==='0'){
             setDigiteCharacter(x)//only for when press 0 for the first time
         }
-        else if(digiteCharacter!=='0'){
-            setDigiteCharacter((value)=>value+x)
+        else if(digiteCharacter!=='0' & digiteCharacter.length<12){   
+            if(x==='.' && dot<1){
+                setDigiteCharacter((value)=>value+x)
+                setDot(1)
+                console.log(dot)
+            }
+            else if(x!=='.'){
+                setDigiteCharacter((value)=>value+x)
+            }
         }       
     }
 
     function handleOperation(x){
         if(x==='+'||x==='-'||x==='*'||x==='/'){
             setOperation(x)
+            setDot(0)
         } 
                
         if(digiteCharacter!=='0'){
@@ -109,6 +119,7 @@ function Calculator() {
             setResultNumeric(0)
             setSecondDigiteCharacter('0')
             setOperation('')
+            setDot(0)
         }
         else if(x==='delete'){
             let xyz=digiteCharacter.substring(0, digiteCharacter.length - 1)

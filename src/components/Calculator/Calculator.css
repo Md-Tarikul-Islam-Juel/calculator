@@ -41,6 +41,9 @@
   background-color: #454545;
   color: white;
 }
+.display {
+  overflow: hidden;
+}
 .display-row .display .display_row_1 {
   display: flex;
   flex-flow: row wrap;
