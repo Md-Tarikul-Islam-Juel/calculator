@@ -17,7 +17,15 @@ function Calculator() {
             setResultNumeric(0)
         } 
         if(digiteCharacter==='0'){
-            setDigiteCharacter(x)//only for when press 0 for the first time
+            //only for when press 0 for the first time
+            if(x==='.' && dot<1){
+                setDigiteCharacter((value)=>value+x)
+                setDot(1)
+                console.log(dot)
+            }
+            else if(x!=='.'){
+                setDigiteCharacter(x)
+            }     
         }
         else if(digiteCharacter!=='0' & digiteCharacter.length<12){   
             if(x==='.' && dot<1){
